@@ -1,4 +1,4 @@
-defmodule RayIntersectionModule do
+defmodule BasicModule do
 	def helloworld() do
 		IO.puts("Hello World")
 	end
@@ -7,11 +7,16 @@ defmodule RayIntersectionModule do
 		IO.puts(text)
 	end
 	
-	def printAndReturn() do
+	def returnText() do
 		"Returned variable from elixir"
 	end
 end
 
-RayIntersectionModule.helloworld()
-RayIntersectionModule.print("Hello Text")
-IO.puts(RayIntersectionModule.printAndReturn())
+i = 14
+i = i + 1 // rebinding
+
+IO.puts i
+
+BasicModule.helloworld
+BasicModule.print "Hello Text"
+IO.puts BasicModule.returnText
